@@ -1,0 +1,103 @@
+body{
+    background-color:papayawhip;background:radial-gradient(rgb(248, 229, 198),rgb(108, 196, 199));
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh; text-align: center
+}
+input[type="text"]{
+    border-radius: 3em; border-style: solid; border-color:rgb(21, 167, 207);padding: 1rem; width: 500px; height: 20px; font-size: large;
+    
+
+      }
+button{
+  border-style:solid;  border-radius: 4ch; border-color: rgb(21, 167, 207)
+  ;  color: rgb(9, 180, 237); background-color: rgb(252, 237, 209); padding: 0.3%; font-size:large;
+ 
+}
+header{
+    color: rgb(13, 137, 195);font-family: Arial, Helvetica, sans-serif;
+    font-size:2.5rem;
+    font-style:normal; text-align: center; margin-top: 6%;margin-bottom: 0.10em; font-family:Arial; width: 100%;
+
+} .aba-d-pesquisa{
+    text-align:center; margin-top: 2%;
+    flex-grow: 1;
+}
+div{
+    background-color: aliceblue; border-radius: 3ch;text-align:left;
+     margin-left:20%; margin-right:20%;
+     flex-grow: 1;
+}
+
+.subtitulo{
+    text-align:left; right: 25%; margin-left: 5%; margin-right:5%; color: rgb(58, 134, 169);
+}
+.descrição-meta{
+    text-align:left; margin-left: 5%; margin-right:5%; color: rgb(34, 50, 62);
+}
+.links{
+    text-align:left; margin-left: 5%; margin-right:5%; color: rgb(63, 95, 151);
+}
+/* Estiliza o rodapé da página */
+.rodape{
+    background-color: white; /* Cor de fundo do rodapé */
+    color: #459ee3; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: sticky; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
